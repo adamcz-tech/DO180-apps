@@ -1,0 +1,7 @@
+FROM ubuntu
+RUN mkdir -p /scripts/node-hw
+WORKDIR /scripts/node-hw
+ADD nodejs-helloworld/* .
+RUN echo content: && pwd && ls -l
+EXPOSE 8081
+CMD [ "node", "app.js" ]
