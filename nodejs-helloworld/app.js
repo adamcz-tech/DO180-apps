@@ -6,7 +6,7 @@ var requestNo = 0;
 
 app.get('/', function (req, res) {
 	requestNo++;
-  res.send(`Hello World ar at port ${port} - request no = ${requestNo}`);
+  res.send(`Hello World ar at port ${port} - request no = ${requestNo}\n`);
 });
 
 app.listen(port, function () {
