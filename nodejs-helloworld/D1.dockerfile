@@ -1,4 +1,5 @@
 FROM ubuntu
+ENV INTERNAL="int1"
 RUN mkdir -p /scripts/node-hw
 WORKDIR /scripts/node-hw
 ADD * .
